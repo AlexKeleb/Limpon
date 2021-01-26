@@ -1,0 +1,28 @@
+body {
+  background-color: #cccccc;
+}
+
+.form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 540px;
+  padding: 8px;
+  border: 2px solid #dfe8ff;
+  border-radius: 50px;
+}
+
+.form-input {
+  border: none;
+  background: transparent;
+}
+
+.form-link {
+  color: #ffffff;
+  border: none;
+  background: #1085e4;
+}
+/*# sourceMappingURL=main.css.map */
