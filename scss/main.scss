@@ -1,14 +1,109 @@
 body {
-  background-color: #cccccc;
+  min-width: 1920px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+
+  color: #7581a1;
+  background-color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header__title {
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 600;
+  color: #192b59;
+  text-transform: capitalize;
+}
+
+.header__nav-list {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6e7ea9;
+  text-transform: uppercase;
+}
+
+.btn-free {
+  font-family: "MyriadPro-Regular", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background: #1085e4;
+}
+
+.grid h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #192b59;
+}
+
+.grid h2 span {
+  display: block;
+  font-size: 14px;
+  line-height: 90px;
+  font-weight: 800;
+  color: #1085e4;
+}
+
+// * временно
+.grid__item {
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+}
+
+.grid__item h3 {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #192b59;
+}
+
+.grid__item a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1085e4;
+}
+
+
+
+
+// ? временно
 .form-wrap {
   display: flex;
   justify-content: space-between;
   width: 540px;
   padding: 8px;
   border: 2px solid #dfe8ff;
-  border-radius: 50px;;
+  border-radius: 50px;
 }
 
 .form-input {
@@ -20,8 +115,4 @@ body {
   color: #ffffff;
   border: none;
   background: #1085e4;
-}
-
-.fjsdfjdl {
-  gi asjgl;
 }
