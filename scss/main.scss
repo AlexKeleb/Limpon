@@ -1,5 +1,8 @@
 body {
   min-width: 1920px;
+  padding-top: 50px;
+  // padding-left: 10px;
+  // padding-right: 10px;
 
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -9,6 +12,7 @@ body {
 
   color: #7581a1;
   background-color: #ffffff;
+  background-color: #cccccc;
 }
 
 a {
@@ -36,26 +40,48 @@ img {
   overflow: hidden;
 }
 
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav .nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 90px;
+  font-weight: 700;
+  color: #6e7ea9;
+  text-transform: uppercase;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.btn-free {
+  padding: 25px 50px;
+  font-family: "MyriadPro-Regular", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background: #1085e4;
+  border-radius: 50px;
+}
+
 .header__title {
   font-size: 80px;
   line-height: 90px;
   font-weight: 600;
   color: #192b59;
   text-transform: capitalize;
-}
-
-.header__nav-list {
-  font-size: 12px;
-  font-weight: 700;
-  color: #6e7ea9;
-  text-transform: uppercase;
-}
-
-.btn-free {
-  font-family: "MyriadPro-Regular", sans-serif;
-  font-weight: 400;
-  color: #ffffff;
-  background: #1085e4;
 }
 
 .grid h2 {
@@ -92,9 +118,6 @@ img {
   font-weight: 600;
   color: #1085e4;
 }
-
-
-
 
 // ? временно
 .form-wrap {

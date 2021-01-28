@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Limpon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/fonts.css">
@@ -12,13 +13,14 @@
 </head>
 
 <body>
-  <main class="main__content">
-    <!-- ! добавить всем блокам wrapper -->
-
-    <div class="block__header header">
+  <!-- ! добавить всем блокам wrapper -->
+  <div class="block__header header">
+    <div class="header__wrapper container">
       <div class="header__nav">
         <div class="header__logo logo">
-          <a class="logo__image" href="#"></a>
+          <a class="logo__image" href="#">
+            <img src="img/logo.png" width="181" height="49" alt="logo">
+          </a>
         </div>
         <ul class="header__nav-list nav">
           <li class="nav__item">Home</l>
@@ -32,15 +34,19 @@
           </li>
         </ul>
       </div>
-      <div class="header__content">
-        <h1 class="header__title">Best Software Landingpage </h1>
-        <div class="header__link-wrapper">
-          <a class="header__link" href="#">get started now</a>
-          <a class="header__link" href="#">learn more</a>
-        </div>
+    </div>
+
+    <div class="header__content">
+      <h1 class="header__title">Best Software Landingpage </h1>
+      <div class="header__link-wrapper">
+        <a class="header__link" href="#">get started now</a>
+        <a class="header__link" href="#">learn more</a>
       </div>
     </div>
 
+  </div>
+
+  <main class="main__content">
     <div class="block__sponsors sponsors">
       <ul class="sponsors__list">
         <li class="sponsors__item"></li>
