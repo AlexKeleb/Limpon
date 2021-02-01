@@ -13,7 +13,6 @@ body {
 
   color: #7581a1;
   background-color: #ffffff;
-  background-color: #cccccc;
 }
 
 a {
@@ -59,10 +58,19 @@ img {
   padding: 0;
   font-size: 40px;
   font-weight: 700;
-  // line-height: 50px;
+  line-height: 50px;
   color: #192b59;
   text-transform: uppercase;
 }
+
+// разделить на два разных
+// .title-h2--bold {
+// fz700
+// }
+
+// .title-h2--semibold {
+// fz600
+// }
 
 .title-h2 span {
   display: block;
@@ -70,7 +78,7 @@ img {
   margin-bottom: 20px;
   padding: 0;
   font-size: 14px;
-  // line-height: 90px;
+  line-height: 90px;
   font-weight: 800;
   color: #1085e4;
 }
@@ -96,7 +104,7 @@ img {
   margin: 0;
   padding: 0;
   font-size: 12px;
-  // line-height: 90px;
+  line-height: 90px;
   font-weight: 700;
   color: #6e7ea9;
   text-transform: uppercase;
@@ -150,9 +158,9 @@ img {
 //   color: #1085e4;
 // }
 
-.features {
-  background-color: #ffffff;
-}
+// .features {
+//   background-color: #ffffff;
+// }
 
 .grid__item {
   width: 350px;
@@ -164,7 +172,7 @@ img {
   margin: 0;
   padding: 0;
   font-size: 20px;
-  // line-height: 50px;
+  line-height: 50px;
   font-weight: 600;
   color: #192b59;
 }
@@ -238,17 +246,21 @@ img {
   background: transparent;
 }
 
-.form-input::-webkit-input-placeholder { /* WebKit browsers */
-  color:    #b1c3ee;
+.form-input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #b1c3ee;
 }
-.form-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color:    #b1c3ee;
+.form-input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #b1c3ee;
 }
-.form-input::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color:    #b1c3ee;
+.form-input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #b1c3ee;
 }
-.form-input:-ms-input-placeholder { /* Internet Explorer 10+ */
-  color:    #b1c3ee;
+.form-input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #b1c3ee;
 }
 
 .form-link {
@@ -268,7 +280,7 @@ img {
 
 .amazing-features__title {
   font-size: 50px;
-  // line-height: 60px;
+  line-height: 60px;
   font-weight: 600;
 }
 
@@ -279,7 +291,7 @@ img {
 
 .amazing-features__difinition {
   font-size: 14px;
-  // line-height: 24px;
+  line-height: 24px;
 }
 
 .fun {
@@ -322,7 +334,92 @@ img {
 
 .fun__item a {
   font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
   display: block;
 }
 
+.apps__title {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+}
 
+.apps__available {
+  font-weight: 700;
+  line-height: 60px;
+  color: #c4d2dd;
+}
+
+.apps__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.limpon__title {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+}
+
+.control__title {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+}
+
+.screen__title {
+  font-weight: 600;
+}
+
+.screen__title p {
+  font-size: 18px;
+}
+
+.clients {
+  background-image: url(../img/clients/blue-bg.png);
+  // background-position: 0 120px;
+  background-repeat: no-repeat;
+}
+
+.clients__title {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.clients__title span {
+  font-size: 18px;
+  color: #85c8ff;
+}
+
+.cards {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards__item {
+  background-color: #ffffff;
+  border-radius: 35px;
+}
+
+.cards__text {
+  color: #8085b1;
+}
+
+.cards__title {
+  font-size: 22px;
+  line-height: 26px;
+  font-size: 600;
+  color: #000958;
+}
+
+.cards__link {
+  font-size: 14px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #1085e4;
+}
