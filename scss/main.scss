@@ -44,8 +44,17 @@ img {
   padding-top: 25px;
   padding-bottom: 25px;
   border-radius: 50px;
+  font-weight: 700;
   color: #ffffff;
   background-color: #1085e4;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button--transparent {
+  color: #8085b1;
+  border: 2px solid #dce1e5;
+  background-color: transparent;
 }
 
 .container {
@@ -60,7 +69,7 @@ img {
   font-weight: 700;
   line-height: 50px;
   color: #192b59;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 // разделить на два разных
@@ -75,12 +84,19 @@ img {
 .title-h2 span {
   display: block;
   margin: 0;
-  margin-bottom: 20px;
   padding: 0;
   font-size: 14px;
   line-height: 90px;
   font-weight: 800;
   color: #1085e4;
+  text-transform: uppercase;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .header {
@@ -370,6 +386,10 @@ img {
   font-weight: 600;
 }
 
+.screen {
+  background-color: #edf6ff;
+}
+
 .screen__title {
   font-weight: 600;
 }
@@ -422,4 +442,148 @@ img {
   line-height: 60px;
   font-weight: 600;
   color: #1085e4;
+}
+
+.plans__title  {
+  font-weight: 600;
+  text-align: center;
+}
+
+.plans__title span {
+  font-size: 18px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  @include reset-list;
+  text-align: center;
+}
+
+.price__item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f5faff;
+}
+
+.price__title {
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.price__subtitle {
+  display: block;
+  font-size: 20px;
+
+}
+
+.price__suptitle {
+  display: block;
+}
+
+.price__sub-number {
+  font-size: 70px;
+}
+
+.price__text {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.team {
+  background-image: url(../img/team/team-bg.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.team__suptitle {
+  font-size: 18px;
+}
+
+.team__title {
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+.team__title span {
+  font-size: 18px;
+  color: #85c8ff;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  @include reset-list;
+}
+
+.profiles__item {
+  background-color: #ffffff;
+  box-shadow: 0 0 25px 5px  #fafafa;
+}
+
+.profiles__prof {
+  display: block;
+  font-size: 14px;
+  line-height: 60px;
+  font-weight: 800;
+  color: #1a88e1;
+}
+
+.profiles__name {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #192b59;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  @include reset-list;
+}
+
+.submit {
+  background-image: url(../img/submit/submit-bg.png);
+}
+
+.submit__title {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #192b59;
+}
+
+.submit__form {
+  display: flex;
+  flex-direction: column;
+  width: 515px;
+}
+
+.main-footer {
+  background-color: #192b59;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  color: #b6bae0;
+  line-height: 40px;
+}
+
+.footer__copyright-link {
+  line-height: 40px;
+  color: #1085e4;
+  text-transform: uppercase;
+}
+
+.social {
+  display: flex;
+  @include reset-list;
 }
