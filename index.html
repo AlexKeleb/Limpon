@@ -310,7 +310,7 @@
           Our Happy Clients
         </h2>
         <ul class="clients__cards cards">
-          <li class="cards__item card">
+          <li class="cards__item">
             <p class="cards__text">
               It is a long established fact that a read
               her will be distracted by the readable
@@ -362,8 +362,8 @@
         <ul class="plans__list price">
           <li class="price__item">
             <h3 class="price__title">
-              <span class="price__subtitle">Free</span>
-              starter
+              <span class="price__sub-number">Free</span>
+              <span class="price__suptitle">starter</span>
             </h3>
             <p class="price__text">
               Unlimited users Active
@@ -373,12 +373,12 @@
               Free Hosting Name
               24x7 Online Support
             </p>
-            <a href="#" class="price__btn">choose plan</a>
+            <a href="#" class="price__btn button button--transparent">choose plan</a>
           </li>
           <li class="price__item">
             <h3 class="price__title">
-              <span class="price__subtitle">$<span>90</span>/mo</span>
-              starter
+              <span class="price__subtitle">$<span class="price__sub-number">90</span>/mo</span>
+              <span class="price__suptitle">starter</span>
             </h3>
             <p class="price__text">
               Unlimited users Active
@@ -388,12 +388,12 @@
               Free Hosting Name
               24x7 Online Support
             </p>
-            <a href="#" class="price__btn">choose plan</a>
+            <a href="#" class="price__btn button">choose plan</a>
           </li>
           <li class="price__item">
             <h3 class="price__title">
-              <span class="price__subtitle">$350/mo</span>
-              starter
+              <span class="price__subtitle">$<span class="price__sub-number">350</span>/mo</span>
+              <span class="price__suptitle">starter</span>
             </h3>
             <p class="price__text">
               Unlimited users Active
@@ -403,21 +403,21 @@
               Free Hosting Name
               24x7 Online Support
             </p>
-            <a href="#" class="price__btn">choose plan</a>
+            <a href="#" class="price__btn button button--transparent">choose plan</a>
           </li>
         </ul>
       </div>
     </div>
 
     <div class="team">
-      <div class="team__wrapper">
+      <div class="team__wrapper container">
         <h2 class="team__title title-h2">
           <span class="team__suptitle">angels</span>
           Our Team
         </h2>
         <ul class="team__cards profiles">
           <li class="profiles__item">
-            <img src="img/team-foto-1.jpg" alt="Ricardo">
+            <img src="img/team/team-foto-1.jpg" alt="Ricardo">
             <span class="profiles__prof">founder</span>
             <h3 class="profiles__name">Ricardo T. Obrien</h3>
             <ul class="profiles__social social-link">
@@ -425,9 +425,9 @@
             </ul>
           </li>
           <li class="profiles__item">
-            <img src="img/team-foto-2.jpg" alt="Alberto">
+            <img src="img/team/team-foto-2.jpg" alt="Alberto">
             <span class="profiles__prof">ceo</span>
-            <h3 class="profiles__name">Ricardo T. Obrien</h3>
+            <h3 class="profiles__name">Alberto Del Rio</h3>
             <ul class="profiles__social social-link">
               <li class="social-link__item">facebook</li>
               <li class="social-link__item">twitter</li>
@@ -436,7 +436,7 @@
             </ul>
           </li>
           <li class="profiles__item">
-            <img src="img/team-foto-3.jpg" alt="Thomas">
+            <img src="img/team/team-foto-3.jpg" alt="Thomas">
             <span class="profiles__prof">designer</span>
             <h3 class="profiles__name">Thomas Alva Adison</h3>
             <ul class="profiles__social social-link">
@@ -448,35 +448,39 @@
     </div>
 
     <div class="submit">
-      <div class="submit__image">
-        <img src="img/submit-screen.png" alt="control">
+      <div class="submit__wrapper container">
+        <div class="submit__image">
+          <img src="img/submit/submit-screen.png" alt="control">
+        </div>
+        <h2 class="submit__title">
+          Start Your Free Trail<br>
+          No Need Credit Card.
+        </h2>
+        <form action="post" class="submit__form">
+          <input type="text" placeholder="Enter your name here">
+          <input type="email" placeholder="Enter your email here">
+          <textarea name="message-field" id="message">Enter your message here</textarea>
+          <button type="submit" class="button">submit now</button>
+        </form>
       </div>
-      <h2 class="submit__title">
-        Start Your Free Trail
-        No Need Credit Card.
-      </h2>
-      <form action="post" class="submit__form">
-        <input type="text">
-        <input type="text">
-        <textarea name="message-field" id="message" cols="30" rows="10"></textarea>
-        <button type="submit"></button>
-      </form>
     </div>
 
   </main>
 
   <footer class="main-footer">
-    <p class="footer__copyright">
-      Made With Love & Copyright By -
-      <span>limpon</span>
-    </p>
-    <ul class="footer__social social">
-      <li class="social__item">facebook</li>
-      <li class="social__item">twitter</li>
-      <li class="social__item">Be</li>
-      <li class="social__item">pinteres</li>
-      <li class="social__item">F</li>
-    </ul>
+    <div class="footer__wrapper container">
+      <p class="footer__copyright">
+        Made With Love & Copyright By -
+        <a href="#" class="footer__copyright-link">limpon</a>
+      </p>
+      <ul class="footer__social social">
+        <li class="social__item">facebook</li>
+        <li class="social__item">twitter</li>
+        <li class="social__item">Be</li>
+        <li class="social__item">pinteres</li>
+        <li class="social__item">F</li>
+      </ul>
+    </div>
   </footer>
 </body>
 
