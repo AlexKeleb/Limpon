@@ -468,17 +468,26 @@ img {
 .price__subtitle {
   display: block;
   font-size: 20px;
+  color: #7b8ab2;
 }
 
 .price__suptitle {
   display: block;
+  color: #0084ff;
 }
 
 .price__sub-number {
   font-size: 70px;
+  color: #192b59;
 }
 
-.price__text {
+.price__features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.price__feature {
   font-size: 14px;
   line-height: 40px;
 }
@@ -520,8 +529,8 @@ img {
 
 .profiles__item {
   background-color: #ffffff;
-  -webkit-box-shadow: 0 0 25px 5px  #fafafa;
-          box-shadow: 0 0 25px 5px  #fafafa;
+  -webkit-box-shadow: 0 0 25px 5px #fafafa;
+          box-shadow: 0 0 25px 5px #fafafa;
 }
 
 .profiles__prof {
