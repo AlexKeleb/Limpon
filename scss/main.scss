@@ -43,18 +43,53 @@ img {
 .button {
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-left: 43px;
+  padding-right: 44px;
   border-radius: 50px;
+  font-size: 12px;
   font-weight: 700;
   color: #ffffff;
   background-color: #1085e4;
+  border: 1px solid #1085e4;
   text-transform: uppercase;
-  border: none;
+}
+
+.button:hover {
+  color: #1085e4;
+  background-color: #ffffff;
+}
+
+.btn-free {
+  padding-top: 22px;
+  padding-bottom: 20px;
+  padding-left: 54px;
+  padding-right: 55px;
+  // font-family: "MyriadPro-Regular", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.7px;
+}
+
+.button--grey {
+  color: #7e8bae;
+  background-color: #cbdbe8;
+  border: 1px solid #cbdbe8;;
+}
+
+.button--grey:hover {
+  color: #7e8bae;
+  background-color: #fff;
 }
 
 .button--transparent {
   color: #8085b1;
   border: 2px solid #dce1e5;
   background-color: transparent;
+}
+
+.button--transparent:hover {
+  color: #ffffff;
+  border: 2px solid #1085e4;
+  background-color: #1085e4;
 }
 
 .container {
@@ -108,35 +143,35 @@ img {
 }
 
 .header__nav {
-  padding-top: 50px;
+  padding-top: 53px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__nav .nav {
+.logo__image {
+  width: 181px;
+  height: 49px;
+}
+
+.nav__list {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include reset-list;
   font-size: 12px;
-  line-height: 90px;
+  // line-height: 90px;
   font-weight: 700;
   color: #6e7ea9;
+  letter-spacing: 1.7px;
   text-transform: uppercase;
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 40px;
+.nav__item {
+  letter-spacing: 2.5px;
 }
 
-.btn-free {
-  padding: 25px 50px;
-  font-family: "MyriadPro-Regular", sans-serif;
-  font-weight: 400;
-  color: #ffffff;
-  background: #1085e4;
-  border-radius: 50px;
+.nav__item + .nav__item {
+  margin-left: 38px;
+  // letter-spacing: 2.1px;
 }
 
 .content {
@@ -149,6 +184,10 @@ img {
   line-height: 90px;
   font-weight: 600;
   color: #192b59;
+}
+
+.header__link-wrapper a + a {
+  margin-left: 20px;
 }
 
 .sponsors {
@@ -232,6 +271,9 @@ img {
 }
 
 .robot__title {
+  font-size: 50px;
+  line-height: 26px;
+  font-weight: 600;
   color: #ffffff;
 }
 
@@ -255,6 +297,7 @@ img {
 }
 
 .form-input {
+  width: 100%;
   font-size: 14px;
   line-height: 28px;
   color: #b1c3ee;
@@ -279,9 +322,10 @@ img {
   color: #b1c3ee;
 }
 
-.form-link {
+.form-link .button {
+  font-size: 14px;
   color: #ffffff;
-  border: none;
+  border: 1px solid #1085e4;
   background: #1085e4;
 }
 
@@ -500,7 +544,7 @@ img {
   background-image: url(../img/team/team-bg.png);
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .team__suptitle {
@@ -553,6 +597,9 @@ img {
 
 .submit {
   background-image: url(../img/submit/submit-bg.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .submit__title {
