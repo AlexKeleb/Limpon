@@ -40,6 +40,7 @@ img {
   border-radius: 50px;
   font-size: 12px;
   font-weight: 700;
+  letter-spacing: 2.4px;
   color: #ffffff;
   background-color: #1085e4;
   border: 1px solid #1085e4;
@@ -84,7 +85,7 @@ img {
 }
 
 .container {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -94,6 +95,7 @@ img {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
+  letter-spacing: -1.5px;
   color: #192b59;
   text-transform: capitalize;
 }
@@ -105,6 +107,7 @@ img {
   font-size: 14px;
   line-height: 90px;
   font-weight: 800;
+  letter-spacing: 3px;
   color: #1085e4;
   text-transform: uppercase;
 }
@@ -144,13 +147,16 @@ img {
   list-style: none;
   font-size: 12px;
   font-weight: 700;
-  color: #6e7ea9;
   letter-spacing: 1.7px;
   text-transform: uppercase;
 }
 
 .nav__item {
   letter-spacing: 2.5px;
+}
+
+.nav__item-link {
+  color: #6e7ea9;
 }
 
 .nav__item + .nav__item {
@@ -164,14 +170,29 @@ img {
 }
 
 .header__title {
+  margin-bottom: 63px;
+  max-width: 540px;
   font-size: 80px;
   line-height: 90px;
   font-weight: 600;
+  letter-spacing: -2.4px;
   color: #192b59;
 }
 
+.header__link-wrapper {
+  padding-left: 5px;
+}
+
 .header__link-wrapper a + a {
-  margin-left: 20px;
+  margin-left: 17px;
+}
+
+.content .button {
+  padding-top: 20px;
+  padding-bottom: 21px;
+  padding-left: 40px;
+  padding-right: 39px;
+  letter-spacing: 2.4px;
 }
 
 .sponsors {
@@ -336,6 +357,8 @@ img {
 }
 
 .fun {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #e8f1fa;
 }
 
@@ -344,6 +367,7 @@ img {
   line-height: 60px;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 75px;
 }
 
 .fun__title span {
@@ -364,6 +388,7 @@ img {
 }
 
 .fun__item {
+  width: 255px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
@@ -372,15 +397,19 @@ img {
 
 .fun__item span {
   display: block;
+  margin-bottom: 20px;
   font-size: 60px;
+  letter-spacing: -2px;
   color: #bacbdc;
 }
 
 .fun__item a {
+  display: block;
   font-size: 12px;
   font-weight: 700;
   line-height: 30px;
-  display: block;
+  letter-spacing: 2.5px;
+  color: #1085e4;
 }
 
 .apps__title {
