@@ -94,7 +94,6 @@ img {
   padding: 0;
   font-size: 40px;
   font-weight: 700;
-  line-height: 50px;
   letter-spacing: -1.5px;
   color: #192b59;
   text-transform: capitalize;
@@ -105,7 +104,6 @@ img {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  line-height: 90px;
   font-weight: 800;
   letter-spacing: 3px;
   color: #1085e4;
@@ -357,14 +355,16 @@ img {
 }
 
 .fun {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 117px;
+  padding-bottom: 106px;
   background-color: #e8f1fa;
 }
 
 .fun__title {
+  max-width: 410px;
+  margin: 0 auto;
   font-size: 50px;
-  line-height: 60px;
+  line-height: 1.2;
   font-weight: 600;
   text-align: center;
   margin-bottom: 75px;
@@ -372,7 +372,7 @@ img {
 
 .fun__title span {
   font-size: 16px;
-  line-height: 60px;
+  margin-bottom: 14px;
 }
 
 .fun__list {
@@ -446,19 +446,36 @@ img {
 }
 
 .screen {
+  padding-top: 111px;
   background-color: #edf6ff;
 }
 
 .screen__title {
+  margin-bottom: 83px;
   font-weight: 600;
+  text-align: center;
+  letter-spacing: -1.2px;
 }
 
-.screen__title p {
+.screen__title span {
+  margin-bottom: 28px;
   font-size: 18px;
+  letter-spacing: 3.5px;
+}
+
+.screen__image {
+  position: relative;
+  right: 5px;
+  width: 1288px;
+  height: 490px;
+  margin: 0 auto;
 }
 
 .clients {
+  padding-top: 200px;
+  padding-bottom: 120px;
   background-image: url(../img/clients/blue-bg.png);
+  background-position: 0 120px;
   background-repeat: no-repeat;
 }
 
@@ -527,36 +544,39 @@ img {
 }
 
 .price__item {
+  width: 350px;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #f5faff;
 }
 
 .price__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-size: 70px;
   line-height: 40px;
   font-weight: 700;
+  color: #000958;
 }
 
-.price__subtitle {
-  display: block;
+.price__title span {
   font-size: 20px;
   color: #7b8ab2;
 }
 
-.price__suptitle {
+.price__subtitle {
   display: block;
+  margin-bottom: 45px;
+  font-size: 20px;
   color: #0084ff;
-}
-
-.price__sub-number {
-  font-size: 70px;
-  color: #192b59;
 }
 
 .price__features {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 45px;
 }
 
 .price__feature {
