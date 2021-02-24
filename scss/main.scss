@@ -270,33 +270,83 @@ img {
   background-image: url("../img/sponsors/fractal.png");
 }
 
-// .grid h2 {
-//   font-size: 40px;
-//   // line-height: 50px;
-//   font-weight: 700;
-//   color: #192b59;
-// }
+.features {
+  padding-top: 115px;
+  padding-bottom: 120px;
+}
 
-// .grid h2 span {
-//   display: block;
-//   font-size: 14px;
-//   // line-height: 90px;
-//   font-weight: 800;
-//   color: #1085e4;
-// }
+.features__title h2 {
+  padding-right: 10px;
+  line-height: 50px;
+}
 
-// .features {
-//   background-color: #ffffff;
-// }
+.features__title h2 span {
+  margin-bottom: 11px;
+  margin-left: -1px;
+  line-height: 25px;
+  letter-spacing: 2.8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "a c d"
+    "b c d"
+    "b f g"
+    "e f g"
+    "e h h";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.grid-title {
+  grid-area: a;
+}
+
+.grid-item-1 {
+  grid-area: b;
+}
+
+.grid-item-2 {
+  grid-area: c;
+}
+
+.grid-item-3 {
+  grid-area: d;
+}
+
+.grid-item-4 {
+  grid-area: e;
+}
+
+.grid-item-5 {
+  grid-area: f;
+}
+
+.grid-item-6 {
+  grid-area: g;
+}
+
+.grid-text {
+  grid-area: h;
+}
 
 .grid__item {
-  width: 350px;
-  padding-top: 50px;
+  position: relative;
+  // width: 350px;
+  padding-top: 170px;
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-bottom: 38px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 1px 18px #f4f4f4;
 }
 
 .grid__item h3 {
   margin: 0;
+  margin-bottom: 6px;
   padding: 0;
   font-size: 20px;
   line-height: 50px;
@@ -307,6 +357,7 @@ img {
 .grid__item p {
   margin: 0;
   padding: 0;
+  margin-bottom: 16px;
 }
 
 .grid__item a {
@@ -330,6 +381,52 @@ img {
 .grid__autor a {
   font-size: 14px;
   color: #1085e4;
+}
+
+.grid-icon {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.grid-icon-1 {
+  background-image: url("../img/best-features/mobile.png");
+  width: 79px;
+  height: 82px;
+}
+
+.grid-icon-2 {
+  background-image: url("../img/best-features/document.png");
+  width: 79px;
+  height: 82px;
+}
+
+.grid-icon-3 {
+  background-image: url("../img/best-features/tools.png");
+  width: 89px;
+  height: 85px;
+}
+
+.grid-icon-4 {
+  background-image: url("../img/best-features/gear.png");
+  width: 102px;
+  height: 91px;
+}
+
+.grid-icon-5 {
+  background-image: url("../img/best-features/computer.png");
+  width: 85px;
+  height: 90px;
+}
+
+.grid-icon-6 {
+  background-image: url("../img/best-features/headfones.png");
+  width: 100px;
+  height: 87px;
 }
 
 .robot {
@@ -394,7 +491,6 @@ img {
   border-radius: 50px;
   background: transparent;
   outline: none;
-  border: 2px solid yellow;
   border-radius: 50px;
 }
 
@@ -431,6 +527,10 @@ img {
   color: #1085e4;
   border: 1px solid #cbdbe8;
   background: #cbdbe8;
+}
+
+.form-link.button:focus {
+  outline: none;
 }
 
 .amazing-features {
