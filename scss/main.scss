@@ -45,14 +45,15 @@ img {
   padding-bottom: 25px;
   padding-left: 43px;
   padding-right: 44px;
-  border-radius: 50px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2.4px;
   color: #ffffff;
   background-color: #1085e4;
   border: 1px solid #1085e4;
+  border-radius: 50px;
   text-transform: uppercase;
+  transition: 0.7s;
 }
 
 .button:hover {
@@ -272,18 +273,21 @@ img {
 
 .features {
   padding-top: 115px;
-  padding-bottom: 120px;
+  padding-bottom: 94px;
 }
 
 .features__title h2 {
+  margin-bottom: 20px;
+  margin-left: -3px;
   padding-right: 10px;
   line-height: 50px;
+  letter-spacing: -1.2px;
 }
 
 .features__title h2 span {
   margin-bottom: 11px;
-  margin-left: -1px;
-  line-height: 25px;
+  margin-left: 2px;
+  line-height: 25px; //?!
   letter-spacing: 2.8px;
 }
 
@@ -296,8 +300,8 @@ img {
     "e f g"
     "e h h";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  grid-column-gap: 35px;
+  grid-row-gap: 35px;
 }
 
 .grid-title {
@@ -333,20 +337,19 @@ img {
 }
 
 .grid__item {
-  position: relative;
-  // width: 350px;
-  padding-top: 170px;
-  padding-left: 50px;
+  box-sizing: border-box;
+  max-width: 350px;
+  padding-top: 38px;
+  padding-left: 45px;
   padding-right: 40px;
-  padding-bottom: 38px;
+  padding-bottom: 69px;
   text-align: center;
-  border-radius: 10px;
   box-shadow: 0 1px 18px #f4f4f4;
+  border-radius: 10px;
 }
 
 .grid__item h3 {
   margin: 0;
-  margin-bottom: 6px;
   padding: 0;
   font-size: 20px;
   line-height: 50px;
@@ -356,8 +359,8 @@ img {
 
 .grid__item p {
   margin: 0;
-  padding: 0;
   margin-bottom: 16px;
+  padding: 0;
 }
 
 .grid__item a {
@@ -371,9 +374,17 @@ img {
   padding: 0;
 }
 
+.grid__description {
+  margin: 0;
+  margin-bottom: 12px;
+  padding-left: 20px;
+}
+
 .grid__autor {
   margin: 0;
+  margin-bottom: 21px;
   padding: 0;
+  padding-left: 25px;
   font-weight: 700;
   color: #000000;
 }
@@ -381,53 +392,218 @@ img {
 .grid__autor a {
   font-size: 14px;
   color: #1085e4;
+  letter-spacing: -0.5px;
 }
 
 .grid-icon {
-  position: absolute;
-  top: 50px;
-  left: 150px;
-  background-repeat: no-repeat;
-  display: block;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
+  height: 92px;
+  background-repeat: no-repeat;
+  background-position: center;
+  // display: block; //оно по умолчанию display: block
 }
 
 .grid-icon-1 {
   background-image: url("../img/best-features/mobile.png");
-  width: 79px;
-  height: 82px;
+  background-size: 79px 82px;
 }
 
 .grid-icon-2 {
   background-image: url("../img/best-features/document.png");
-  width: 79px;
-  height: 82px;
+  background-size: 73px 79px;
 }
 
 .grid-icon-3 {
   background-image: url("../img/best-features/tools.png");
-  width: 89px;
-  height: 85px;
+  background-size: 89px 85px;
 }
 
 .grid-icon-4 {
   background-image: url("../img/best-features/gear.png");
-  width: 102px;
-  height: 91px;
+  background-size: 103px 92px;
 }
 
 .grid-icon-5 {
   background-image: url("../img/best-features/computer.png");
-  width: 85px;
-  height: 90px;
+  background-size: 85px 90px;
 }
 
 .grid-icon-6 {
   background-image: url("../img/best-features/headfones.png");
-  width: 100px;
-  height: 87px;
+  background-size: 100px 87px;
 }
+
+// *старая версия
+// .features {
+//   padding-top: 115px;
+//   padding-bottom: 94px;
+// }
+
+// .features__title h2 {
+//   padding-right: 10px;
+//   line-height: 50px;
+// }
+
+// .features__title h2 span {
+//   margin-bottom: 11px;
+//   margin-left: -1px;
+//   line-height: 25px;
+//   letter-spacing: 2.8px;
+// }
+
+// .grid {
+//   display: grid;
+//   grid-template-areas:
+//     "a c d"
+//     "b c d"
+//     "b f g"
+//     "e f g"
+//     "e h h";
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-column-gap: 30px;
+//   grid-row-gap: 30px;
+// }
+
+// .grid-title {
+//   grid-area: a;
+// }
+
+// .grid-item-1 {
+//   grid-area: b;
+// }
+
+// .grid-item-2 {
+//   grid-area: c;
+// }
+
+// .grid-item-3 {
+//   grid-area: d;
+// }
+
+// .grid-item-4 {
+//   grid-area: e;
+// }
+
+// .grid-item-5 {
+//   grid-area: f;
+// }
+
+// .grid-item-6 {
+//   grid-area: g;
+// }
+
+// .grid-text {
+//   grid-area: h;
+// }
+
+// .grid__item {
+//   box-sizing: border-box;
+//   position: relative;
+//   // width: 350px;
+//   height: 393px;
+//   padding-top: 170px;
+//   padding-left: 50px;
+//   padding-right: 40px;
+//   padding-bottom: 38px;
+//   text-align: center;
+//   border-radius: 10px;
+//   box-shadow: 0 1px 18px #f4f4f4;
+// }
+
+// .grid__item h3 {
+//   margin: 0;
+//   margin-bottom: 6px;
+//   padding: 0;
+//   font-size: 20px;
+//   line-height: 50px;
+//   font-weight: 600;
+//   color: #192b59;
+// }
+
+// .grid__item p {
+//   margin: 0;
+//   padding: 0;
+//   margin-bottom: 16px;
+// }
+
+// .grid__item a {
+//   font-size: 14px;
+//   font-weight: 600;
+//   color: #1085e4;
+// }
+
+// .grid__text {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .grid__description {
+//   margin: 0;
+//   margin-bottom: 12px;
+//   padding-left: 20px;
+// }
+
+// .grid__autor {
+//   margin: 0;
+//   margin-bottom: 21px;
+//   padding: 0;
+//   padding-left: 25px;
+//   font-weight: 700;
+//   color: #000000;
+// }
+
+// .grid__autor a {
+//   font-size: 14px;
+//   color: #1085e4;
+//   letter-spacing: -0.5px;
+// }
+
+// .grid-icon {
+//   position: absolute;
+//   top: 50px;
+//   left: 150px;
+//   background-repeat: no-repeat;
+//   display: block;
+//   margin: 0 auto;
+//   margin-bottom: 24px; // !не работает
+// }
+
+// .grid-icon-1 {
+//   background-image: url("../img/best-features/mobile.png");
+//   width: 79px;
+//   height: 82px;
+// }
+
+// .grid-icon-2 {
+//   background-image: url("../img/best-features/document.png");
+//   width: 79px;
+//   height: 82px;
+// }
+
+// .grid-icon-3 {
+//   background-image: url("../img/best-features/tools.png");
+//   width: 89px;
+//   height: 85px;
+// }
+
+// .grid-icon-4 {
+//   background-image: url("../img/best-features/gear.png");
+//   width: 102px;
+//   height: 92px;
+// }
+
+// .grid-icon-5 {
+//   background-image: url("../img/best-features/computer.png");
+//   width: 85px;
+//   height: 90px;
+// }
+
+// .grid-icon-6 {
+//   background-image: url("../img/best-features/headfones.png");
+//   width: 100px;
+//   height: 87px;
+// }
 
 .robot {
   padding-top: 52px;
@@ -478,6 +654,7 @@ img {
 .form-input {
   box-sizing: border-box;
   width: 100%;
+  padding-right: 5px;
   padding-left: 30px;
   font-size: 14px;
   line-height: 28px;
@@ -535,11 +712,25 @@ img {
 
 .amazing-features {
   display: flex;
+  justify-content: flex-end;
+  padding-top: 113px;
+  padding-bottom: 183px;
   background-color: #ffffff;
   background-image: url("../img/amazing-features/amazing-features-bg.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.amazing-features__wrap {
+  width: 605px;
+}
+
+.amazing-features__icon {
+  width: 117px;
+  height: 98px;
+  background-image: url("../img/amazing-features/gear.png");
+  background-repeat: no-repeat;
 }
 
 .amazing-features__title {
@@ -548,12 +739,23 @@ img {
   font-weight: 600;
 }
 
+.amazing-features__content {
+  margin: 0;
+}
+
+.amazing-features__list {
+  height: 315px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 .amazing-features__term {
   font-weight: 700;
   color: #5a6789;
 }
 
-.amazing-features__difinition {
+.amazing-features__definition {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
 }
