@@ -1,4 +1,6 @@
 body {
+  min-width: 320px;
+  max-width: 2556px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 26px;
@@ -569,17 +571,27 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-top: 113px;
-  padding-bottom: 183px;
+  padding-top: 118px;
+  padding-bottom: 166px;
   background-color: #ffffff;
-  background-image: url("../img/amazing-features/amazing-features-bg.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../img/amazing-features/notebook.png"), url("../img/amazing-features/amazing-features-bg.png");
+  background-position: left 82%, 0 0;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+}
+
+.amazing-features__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .amazing-features__wrap {
-  width: 605px;
+  -ms-flex-preferred-size: 607px;
+      flex-basis: 607px;
 }
 
 .amazing-features__icon {
@@ -587,31 +599,53 @@ img {
   height: 98px;
   background-image: url("../img/amazing-features/gear.png");
   background-repeat: no-repeat;
+  background-position: -25px -7px;
 }
 
 .amazing-features__title {
+  margin-bottom: 25px;
+  padding-right: 45px;
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
+  letter-spacing: -1px;
 }
 
 .amazing-features__content {
   margin: 0;
+  margin-bottom: 29px;
 }
 
 .amazing-features__list {
-  height: 315px;
+  margin: 0;
+  max-height: 340px;
   overflow: hidden;
   overflow-y: scroll;
 }
 
+.amazing-features__list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.amazing-features__list::-webkit-scrollbar-track {
+  background: #f3f6ff;
+}
+
+.amazing-features__list::-webkit-scrollbar-thumb {
+  background: #1085e4;
+  border-radius: 10px;
+}
+
 .amazing-features__term {
+  margin-bottom: 11px;
   font-weight: 700;
   color: #5a6789;
 }
 
 .amazing-features__definition {
   margin: 0;
+  margin-bottom: 53px;
+  padding-right: 52px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -623,6 +657,9 @@ img {
 }
 
 .fun__title {
+  letter-spacing: -1.5px;
+  position: relative;
+  left: 11px;
   max-width: 410px;
   margin: 0 auto;
   font-size: 50px;
@@ -674,25 +711,91 @@ img {
   color: #1085e4;
 }
 
+.apps {
+  padding-top: 112px;
+  padding-bottom: 93px;
+}
+
+.apps__wrap {
+  position: relative;
+}
+
+.apps__content {
+  position: relative;
+  z-index: 999;
+  width: 55%;
+}
+
 .apps__title {
+  margin-bottom: 36px;
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
 }
 
+.apps__text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .apps__available {
+  font-size: 16px;
   font-weight: 700;
   line-height: 60px;
   color: #c4d2dd;
+  letter-spacing: 3.1px;
+  text-transform: uppercase;
 }
 
 .apps__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0;
+  margin-left: -15px;
   padding: 0;
   list-style: none;
+}
+
+.apps__item:first-child {
+  margin-right: 2px;
+}
+
+.apps__item:first-child:hover {
+  -webkit-filter: opacity(70%);
+          filter: opacity(70%);
+}
+
+.apps__item:first-child:active {
+  -webkit-filter: saturate(300%);
+          filter: saturate(300%);
+}
+
+.apps__item:last-child:hover {
+  -webkit-filter: opacity(70%);
+          filter: opacity(70%);
+}
+
+.apps__item:last-child:active {
+  -webkit-filter: saturate(300%);
+          filter: saturate(300%);
+}
+
+.apps__img {
+  position: absolute;
+  top: 49%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: -15%;
+}
+
+.limpon {
+  background-image: url("../img/limpon/linpon-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .limpon__title {
@@ -772,7 +875,7 @@ img {
 .cards__title {
   font-size: 22px;
   line-height: 26px;
-  font-size: 600;
+  font-weight: 600;
   color: #000958;
 }
 
