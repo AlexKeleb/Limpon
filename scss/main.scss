@@ -1,7 +1,9 @@
 // ! разобраться что с line-height
 
 body {
-  // min-width: 1920px;
+  min-width: 320px;
+  // width: 1920px;
+  max-width: 2556px;
   // padding-left: 10px;
   // padding-right: 10px;
 
@@ -434,177 +436,6 @@ img {
   background-size: 100px 87px;
 }
 
-// *старая версия
-// .features {
-//   padding-top: 115px;
-//   padding-bottom: 94px;
-// }
-
-// .features__title h2 {
-//   padding-right: 10px;
-//   line-height: 50px;
-// }
-
-// .features__title h2 span {
-//   margin-bottom: 11px;
-//   margin-left: -1px;
-//   line-height: 25px;
-//   letter-spacing: 2.8px;
-// }
-
-// .grid {
-//   display: grid;
-//   grid-template-areas:
-//     "a c d"
-//     "b c d"
-//     "b f g"
-//     "e f g"
-//     "e h h";
-//   grid-template-columns: 1fr 1fr 1fr;
-//   grid-column-gap: 30px;
-//   grid-row-gap: 30px;
-// }
-
-// .grid-title {
-//   grid-area: a;
-// }
-
-// .grid-item-1 {
-//   grid-area: b;
-// }
-
-// .grid-item-2 {
-//   grid-area: c;
-// }
-
-// .grid-item-3 {
-//   grid-area: d;
-// }
-
-// .grid-item-4 {
-//   grid-area: e;
-// }
-
-// .grid-item-5 {
-//   grid-area: f;
-// }
-
-// .grid-item-6 {
-//   grid-area: g;
-// }
-
-// .grid-text {
-//   grid-area: h;
-// }
-
-// .grid__item {
-//   box-sizing: border-box;
-//   position: relative;
-//   // width: 350px;
-//   height: 393px;
-//   padding-top: 170px;
-//   padding-left: 50px;
-//   padding-right: 40px;
-//   padding-bottom: 38px;
-//   text-align: center;
-//   border-radius: 10px;
-//   box-shadow: 0 1px 18px #f4f4f4;
-// }
-
-// .grid__item h3 {
-//   margin: 0;
-//   margin-bottom: 6px;
-//   padding: 0;
-//   font-size: 20px;
-//   line-height: 50px;
-//   font-weight: 600;
-//   color: #192b59;
-// }
-
-// .grid__item p {
-//   margin: 0;
-//   padding: 0;
-//   margin-bottom: 16px;
-// }
-
-// .grid__item a {
-//   font-size: 14px;
-//   font-weight: 600;
-//   color: #1085e4;
-// }
-
-// .grid__text {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// .grid__description {
-//   margin: 0;
-//   margin-bottom: 12px;
-//   padding-left: 20px;
-// }
-
-// .grid__autor {
-//   margin: 0;
-//   margin-bottom: 21px;
-//   padding: 0;
-//   padding-left: 25px;
-//   font-weight: 700;
-//   color: #000000;
-// }
-
-// .grid__autor a {
-//   font-size: 14px;
-//   color: #1085e4;
-//   letter-spacing: -0.5px;
-// }
-
-// .grid-icon {
-//   position: absolute;
-//   top: 50px;
-//   left: 150px;
-//   background-repeat: no-repeat;
-//   display: block;
-//   margin: 0 auto;
-//   margin-bottom: 24px; // !не работает
-// }
-
-// .grid-icon-1 {
-//   background-image: url("../img/best-features/mobile.png");
-//   width: 79px;
-//   height: 82px;
-// }
-
-// .grid-icon-2 {
-//   background-image: url("../img/best-features/document.png");
-//   width: 79px;
-//   height: 82px;
-// }
-
-// .grid-icon-3 {
-//   background-image: url("../img/best-features/tools.png");
-//   width: 89px;
-//   height: 85px;
-// }
-
-// .grid-icon-4 {
-//   background-image: url("../img/best-features/gear.png");
-//   width: 102px;
-//   height: 92px;
-// }
-
-// .grid-icon-5 {
-//   background-image: url("../img/best-features/computer.png");
-//   width: 85px;
-//   height: 90px;
-// }
-
-// .grid-icon-6 {
-//   background-image: url("../img/best-features/headfones.png");
-//   width: 100px;
-//   height: 87px;
-// }
-
 .robot {
   padding-top: 52px;
   padding-bottom: 45px;
@@ -713,20 +544,28 @@ img {
 .amazing-features {
   display: flex;
   justify-content: flex-end;
-  padding-top: 113px;
-  padding-bottom: 183px;
+  padding-top: 118px;
+  padding-bottom: 166px;
   background-color: #ffffff;
-  background-image: url("../img/amazing-features/amazing-features-bg.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../img/amazing-features/notebook.png"), url("../img/amazing-features/amazing-features-bg.png");
+  background-position: left 82%, 0 0;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+}
+
+.amazing-features__flex {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .amazing-features__wrap {
-  width: 605px;
+  flex-basis: 607px;
 }
 
 .amazing-features__icon {
+  position: relative;
+  top: -7px;
+  left: -25px;
   width: 117px;
   height: 98px;
   background-image: url("../img/amazing-features/gear.png");
@@ -734,28 +573,49 @@ img {
 }
 
 .amazing-features__title {
+  margin-bottom: 25px;
+  padding-right: 45px;
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
+  letter-spacing: -1px;
 }
 
 .amazing-features__content {
   margin: 0;
+  margin-bottom: 29px;
 }
 
 .amazing-features__list {
-  height: 315px;
+  margin: 0;
+  max-height: 340px;
   overflow: hidden;
   overflow-y: scroll;
 }
 
+.amazing-features__list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.amazing-features__list::-webkit-scrollbar-track {
+  background: #f3f6ff;
+}
+
+.amazing-features__list::-webkit-scrollbar-thumb {
+  background: #1085e4;
+  border-radius: 10px;
+}
+
 .amazing-features__term {
+  margin-bottom: 11px;
   font-weight: 700;
   color: #5a6789;
 }
 
 .amazing-features__definition {
   margin: 0;
+  margin-bottom: 53px;
+  padding-right: 52px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -767,6 +627,9 @@ img {
 }
 
 .fun__title {
+  letter-spacing: -1.5px;
+  position: relative;
+  left: 11px;
   max-width: 410px;
   margin: 0 auto;
   font-size: 50px;
@@ -813,29 +676,129 @@ img {
   color: #1085e4;
 }
 
+.apps {
+  // position: relative;
+  padding-top: 112px;
+  padding-bottom: 93px;
+}
+
+.apps__wrap {
+  position: relative;
+}
+
+.apps__content {
+  position: relative;
+  z-index: 999;
+  width: 55%;
+}
+
 .apps__title {
+  margin-bottom: 36px;
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
 }
 
+.apps__text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .apps__available {
+  font-size: 16px;
   font-weight: 700;
   line-height: 60px;
   color: #c4d2dd;
+  letter-spacing: 3.1px;
+  text-transform: uppercase;
 }
 
 .apps__list {
   display: flex;
+  justify-content: flex-start;
   margin: 0;
+  margin-left: -15px;
   padding: 0;
   list-style: none;
 }
 
+.apps__item:first-child {
+  margin-right: 2px;
+}
+
+.apps__item:first-child:hover {
+  filter: opacity(70%);
+}
+
+.apps__item:first-child:active {
+  filter: saturate(300%);
+}
+
+.apps__item:last-child:hover {
+  filter: opacity(70%);
+}
+
+.apps__item:last-child:active {
+  filter: saturate(300%);
+}
+
+.apps__img {
+  position: absolute;
+  top: 49%;
+  transform: translate(0, -50%);
+  right: -15%;
+}
+
+.limpon {
+  padding-top: 129px;
+  padding-bottom: 137px;
+  background-image: url("../img/limpon/linpon-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.limpon__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.limpon__image {
+  position: relative;
+  top: 30px;
+  left: -21px;
+}
+
+.limpon__content {
+  width: 54.5%;
+}
+
+.limpon__icon {
+  position: relative;
+  top: -10px;
+  left: -25px;
+  width: 115px;
+  height: 97px;
+  background-repeat: no-repeat;
+  background-image: url("../img/limpon/gear-with-tools-1.png");
+}
+
 .limpon__title {
+  margin-bottom: 26px;
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
+}
+
+.limpon__text {
+  margin: 0;
+  margin-bottom: 49px;
+}
+
+.limpon__link {
+  padding-top: 20px;
+  padding-bottom: 21px;
+  padding-left: 42px;
+  padding-right: 39px;
 }
 
 .control__title {
@@ -908,7 +871,7 @@ img {
 .cards__title {
   font-size: 22px;
   line-height: 26px;
-  font-size: 600;
+  font-weight: 600;
   color: #000958;
 }
 
