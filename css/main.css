@@ -1,6 +1,4 @@
 body {
-  min-width: 320px;
-  max-width: 2556px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 26px;
@@ -809,11 +807,14 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .limpon__image {
   position: relative;
-  top: 30px;
+  top: 10px;
   left: -21px;
 }
 
@@ -850,14 +851,71 @@ img {
   padding-right: 39px;
 }
 
+.control {
+  padding-top: 130px;
+  padding-bottom: 137px;
+  background-image: url("../img/control/control-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.control__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.control__icon {
+  position: relative;
+  top: -10px;
+  right: 24px;
+  width: 115px;
+  height: 97px;
+  background-repeat: no-repeat;
+  background-image: url("../img/limpon/gear-with-tools-1.png");
+}
+
+.control__content {
+  width: 54.5%;
+  padding-left: 30px;
+}
+
 .control__title {
+  margin-bottom: 26px;
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
 }
 
+.control__text {
+  margin: 0;
+  margin-bottom: 49px;
+  padding-left: 2px;
+}
+
+.control__link {
+  margin-left: 2px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  padding-left: 64px;
+  padding-right: 62px;
+}
+
+.control__image {
+  position: relative;
+  top: 9px;
+  left: 22px;
+}
+
 .screen {
-  padding-top: 111px;
+  padding-top: 112px;
   background-color: #edf6ff;
 }
 
@@ -883,20 +941,23 @@ img {
 }
 
 .clients {
-  padding-top: 200px;
+  padding-top: 193px;
   padding-bottom: 120px;
-  background-image: url(../img/clients/blue-bg.png);
+  background-image: url(../img/clients/blue-bg-1.svg);
   background-position: 0 120px;
   background-repeat: no-repeat;
 }
 
 .clients__title {
+  margin-bottom: 72px;
   font-weight: 600;
   color: #ffffff;
 }
 
 .clients__title span {
+  margin-bottom: 29px;
   font-size: 18px;
+  letter-spacing: 3.5px;
   color: #85c8ff;
 }
 
@@ -904,31 +965,74 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .cards__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 34px;
+  padding-right: 40px;
+  padding-bottom: 39px;
+  padding-left: 40px;
+  -ms-flex-preferred-size: 31.5%;
+      flex-basis: 31.5%;
   background-color: #ffffff;
-  border-radius: 35px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 15px 8px -3px #f4f4f4;
+          box-shadow: 0 15px 8px -3px #f4f4f4;
 }
 
 .cards__text {
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
   color: #8085b1;
 }
 
+.cards__title-wrapper {
+  position: relative;
+  padding-left: 68px;
+}
+
+.cards__title-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 52px;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  background-image: url("../img/clients/foto-1.png");
+  background-size: 57px 52px;
+  background-repeat: no-repeat;
+  background-position: -3px 0;
+  -webkit-box-shadow: 0 15px 25px #b6ada9;
+          box-shadow: 0 15px 25px #b6ada9;
+}
+
 .cards__title {
+  margin: 0;
+  margin-bottom: -1px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 600;
+  letter-spacing: -0.6px;
   color: #000958;
 }
 
 .cards__link {
   font-size: 14px;
-  line-height: 60px;
-  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.9px;
+  font-weight: 700;
   color: #1085e4;
 }
 
