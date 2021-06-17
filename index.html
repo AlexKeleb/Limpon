@@ -456,7 +456,6 @@
       </div>
     </div>
 
-    <!-- ! довести до ума -->
     <div class="plans">
       <div class="plans__wrapper container">
         <h2 class="plans__title title-h2">
@@ -526,30 +525,50 @@
         </h2>
         <ul class="team__cards profiles">
           <li class="profiles__item">
-            <img src="img/team/team-foto-1.jpg" alt="Ricardo">
+            <div class="profiles__img">
+              <img src="img/team/team-foto-1.jpg" alt="Ricardo">
+            </div>
             <span class="profiles__prof">founder</span>
             <h3 class="profiles__name">Ricardo T. Obrien</h3>
             <ul class="profiles__social social-link">
-              <li class="social-link__item">+</li>
+              <li class="social-link__item">
+                <a href="#">
+                  <span class="visually-hidden">+</span class="visually-hidden">
+                </a>
+              </li>
             </ul>
           </li>
           <li class="profiles__item">
-            <img src="img/team/team-foto-2.jpg" alt="Alberto">
+            <div class="profiles__img">
+              <img src="img/team/team-foto-2.jpg" alt="Alberto">
+            </div>
             <span class="profiles__prof">ceo</span>
             <h3 class="profiles__name">Alberto Del Rio</h3>
             <ul class="profiles__social social-link">
-              <li class="social-link__item">facebook</li>
-              <li class="social-link__item">twitter</li>
-              <li class="social-link__item">Ве</li>
-              <li class="social-link__item">chrome</li>
+              <li class="social-link__item facebook">
+                <span class="visually-hidden">facebook</span class="visually-hidden">
+              </li>
+              <li class="social-link__item twitter">
+                <span class="visually-hidden">twitter</span class="visually-hidden">
+              </li>
+              <li class="social-link__item be">
+                <span class="visually-hidden">Ве</span class="visually-hidden">
+              </li>
+              <li class="social-link__item chrome">
+                <span class="visually-hidden">chrome</span class="visually-hidden">
+              </li>
             </ul>
           </li>
           <li class="profiles__item">
-            <img src="img/team/team-foto-3.jpg" alt="Thomas">
+            <div class="profiles__img">
+              <img src="img/team/team-foto-3.jpg" alt="Thomas">
+            </div>
             <span class="profiles__prof">designer</span>
             <h3 class="profiles__name">Thomas Alva Adison</h3>
             <ul class="profiles__social social-link">
-              <li class="social-link__item">+</li>
+              <li class="social-link__item">
+                <span class="visually-hidden">+</span class="visually-hidden">
+              </li>
             </ul>
           </li>
         </ul>
@@ -561,16 +580,18 @@
         <div class="submit__image">
           <img src="img/submit/submit-screen.png" alt="control">
         </div>
-        <h2 class="submit__title">
-          Start Your Free Trail<br>
-          No Need Credit Card.
-        </h2>
-        <form action="post" class="submit__form">
-          <input type="text" placeholder="Enter your name here">
-          <input type="email" placeholder="Enter your email here">
-          <textarea name="message-field" id="message">Enter your message here</textarea>
-          <button type="submit" class="button"><span></span>submit now</button>
-        </form>
+        <div class="submit__content">
+          <h2 class="submit__title">
+            Start Your Free Trail<br>
+            No Need Credit Card.
+          </h2>
+          <form action="post" class="submit__form">
+            <input type="text" placeholder="Enter your name here">
+            <input type="email" placeholder="Enter your email here">
+            <textarea name="message-field" id="message">Enter your message here</textarea>
+            <button type="submit" class="button"><span></span>submit now</button>
+          </form>
+        </div>
       </div>
     </div>
 
