@@ -642,11 +642,17 @@
             Start Your Free Trail<br>
             No Need Credit Card.
           </h2>
-          <form action="post" class="submit__form">
-            <input type="text" placeholder="Enter your name here">
-            <input type="email" placeholder="Enter your email here">
-            <textarea name="message-field" id="message">Enter your message here</textarea>
-            <button type="submit" class="button"><span></span>submit now</button>
+          <form method="GET" action="" class="submit__form">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Enter your name here" id="text-field" name="text">
+            </div>
+            <div class="input-wrapper">
+              <input type="email" placeholder="Enter your email here">
+            </div>
+            <div class="input-wrapper textarea-wrapper">
+              <textarea name="message-field" id="message">Enter your message here</textarea>
+            </div>
+            <button type="submit" class="button">submit now</button>
           </form>
         </div>
       </div>
