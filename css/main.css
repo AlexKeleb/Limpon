@@ -1221,7 +1221,7 @@ img {
 
 .profiles__item {
   width: 350px;
-  padding-bottom: 34px;
+  padding-bottom: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 5px 6px #f8f8f8;
           box-shadow: 0 5px 6px #f8f8f8;
@@ -1410,8 +1410,10 @@ img {
 
 .submit__form input,
 .submit__form textarea {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
   padding-top: 24px;
   padding-bottom: 25px;
   padding-right: 65px;
@@ -1422,20 +1424,64 @@ img {
   border-radius: 50px;
 }
 
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper::after {
+  position: absolute;
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 7.5%;
+  margin: auto 0;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+}
+
+.input-wrapper:nth-child(1)::after {
+  background-image: url("../img/submit/user.svg");
+}
+
+.input-wrapper:nth-child(2)::after {
+  background-image: url("../img/submit/envelope.svg");
+}
+
+.textarea-wrapper::after {
+  top: 27px;
+  background-image: url("../img/submit/edit.svg");
+}
+
 .submit__form textarea {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   height: 160px;
   border-radius: 37px;
   resize: vertical;
 }
 
 .submit__form .button {
+  position: relative;
   width: 232px;
   padding-top: 21px;
   padding-bottom: 23px;
   padding-left: 67px;
   padding-right: 44px;
   letter-spacing: 2px;
+}
+
+.submit__form .button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 23.5%;
+  width: 13px;
+  height: 15px;
+  background-image: url(../img/submit/paper-plane.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .main-footer {
