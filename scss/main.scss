@@ -1450,6 +1450,8 @@ img {
 }
 
 .main-footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
   background-color: #192b59;
 }
 
@@ -1460,6 +1462,8 @@ img {
 }
 
 .footer__copyright {
+  margin: 0;
+  padding-top: 4px;
   color: #b6bae0;
   line-height: 40px;
 }
@@ -1472,5 +1476,16 @@ img {
 
 .social {
   display: flex;
+  align-items: center;
   @include reset-list;
+}
+
+.social__item > a {
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
+.social li + li {
+  margin-left: 25px;
 }
