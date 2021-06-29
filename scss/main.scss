@@ -3,10 +3,10 @@
 body {
   // min-width: 320px;
   // width: 1920px;
-  // max-width: 2556px;
+  // max-width: 1920px;
   // padding-left: 10px;
   // padding-right: 10px;
-  margin: 0 auto;
+  // margin: 0 auto;
 
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -1372,7 +1372,6 @@ img {
 
 .submit__form input {
   margin-bottom: 21px;
-  
 }
 
 .submit__form input,
@@ -1385,9 +1384,13 @@ img {
   padding-right: 65px;
   padding-left: 40px;
   font-size: 14px;
-  color: #8995b3;
   border: 2px solid #dce4ec;
   border-radius: 50px;
+}
+
+.submit__form input:focus,
+.submit__form textarea:focus {
+  outline: none;
 }
 
 .input-wrapper {
@@ -1403,31 +1406,47 @@ img {
   margin: auto 0;
   width: 15px;
   height: 15px;
-  // background: url("../img/submit/user.svg");
   background-repeat: no-repeat;
 }
 
 .input-wrapper:nth-child(1)::after {
-  background-image: url('../img/submit/user.svg');
+  background-image: url("../img/submit/user.svg");
 }
 
 .input-wrapper:nth-child(2)::after {
-  background-image: url('../img/submit/envelope.svg');
+  background-image: url("../img/submit/envelope.svg");
 }
 
 .textarea-wrapper::after {
   top: 27px;
-  background-image: url('../img/submit/edit.svg');
+  background-image: url("../img/submit/edit.svg");
+}
+
+.submit__form input::-webkit-input-placeholder,
+.submit__form textarea::-webkit-input-placeholder {
+  color: #8995b3;
+}
+.submit__form input::-webkit-input-placeholder,
+.submit__form textarea:-ms-input-placeholder {
+  color: #8995b3;
+}
+.submit__form input::-webkit-input-placeholder,
+.submit__form textarea::-ms-input-placeholder {
+  color: #8995b3;
+}
+.submit__form input::-webkit-input-placeholder,
+.submit__form textarea::placeholder {
+  color: #8995b3;
 }
 
 .submit__form textarea {
   margin-bottom: 33px;
-  height: 160px;
+  min-height: 160px;
   border-radius: 37px;
-  resize: vertical;
+  resize: none;
 }
 
-.submit__form .button {
+.submit__button {
   position: relative;
   width: 232px;
   padding-top: 21px;
@@ -1437,17 +1456,21 @@ img {
   letter-spacing: 2px;
 }
 
-.submit__form .button::before {
+.submit__button::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 23.5%;
   width: 13px;
   height: 15px;
-  background-image: url(../img/submit/paper-plane.svg);
+  background-image: url("../img/submit/paper-plane.svg");
   background-repeat: no-repeat;
   background-size: contain;
   transform: translateY(-50%);
+}
+
+.submit__button:hover::before {
+  filter: drop-shadow(0 0 1px #000);
 }
 
 .main-footer {
@@ -1482,11 +1505,28 @@ img {
 }
 
 .social__item > a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: 2s;
+}
+
+.social__item > a svg {
   width: 15px;
   height: 15px;
 }
 
+.social__item > a:hover {
+  background-color: #fff;
+}
+
+.social__item > a:hover svg path {
+  fill: blue;
+}
+
 .social li + li {
-  margin-left: 25px;
+  margin-left: 5px;
 }
