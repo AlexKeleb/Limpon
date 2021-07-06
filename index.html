@@ -34,13 +34,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <!-- ! добавить всем блокам wrapper -->
-  <div class="block__header header">
+  <div class="block__header header" id="blockHome">
     <div class="header__wrapper container">
       <div class="header__nav">
         <div class="header__logo logo">
@@ -48,30 +49,32 @@
             <img src="img/logo.png" width="181" height="49" alt="logo">
           </a>
         </div>
-        <ul class="header__nav-list nav__list">
-          <!-- TODO сделать ссылки с якорями!! -->
+        <ul class="header__nav-list nav__list" id="menu">
           <li class="nav__item">
-            <a class="nav__item-link" href="#">Home</a>
+            <a class="nav__item-link" href="#blockHome">Home</a>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link" href="#">Features</a>
+            <a class="nav__item-link" href="#blockFeatures">Features</a>
           </li>
           <li class="nav__item">
             <a class="nav__item-link" href="#blockRobot">Video</a>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link" href="#">Screens</a>
+            <a class="nav__item-link" href="#blockScreen">Screens</a>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link" href="#">Pricing</a>
+            <a class="nav__item-link" href="#blockPricing">Pricing</a>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link" href="#">Team</a>
+            <a class="nav__item-link" href="#blockTeam">Team</a>
           </li>
           <li class="nav__item">
             <a class="btn-free button" href="#">free trail</a>
           </li>
         </ul>
+        <button class="button-menu" type="button">
+          <svg height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+        </button>
       </div>
 
       <div class="header__content">
@@ -101,7 +104,7 @@
       </div>
     </div>
 
-    <div class="block__features features">
+    <div class="block__features features" id="blockFeatures">
       <div class="features__grid grid container">
         <div class="features__title grid-title">
           <h2 class="title-h2"><span>Features</span>Best Features Ever Seen</h2>
@@ -398,7 +401,7 @@
       </div>
     </div>
 
-    <div class="screen">
+    <div class="screen" id="blockScreen">
       <h2 class="screen__title title-h2">
         <span class="fun__suptitle">screen preview</span>
         Screenshot With Details
@@ -458,7 +461,7 @@
       </div>
     </div>
 
-    <div class="plans">
+    <div class="plans" id="blockPricing">
       <div class="plans__wrapper container">
         <h2 class="plans__title title-h2">
           <span class="plans__suptitle">our plans</span>
@@ -519,7 +522,7 @@
       </div>
     </div>
 
-    <div class="team">
+    <div class="team" id="blockTeam">
       <div class="team__wrapper container">
         <h2 class="team__title title-h2">
           <span class="team__suptitle">angels</span>
@@ -723,10 +726,50 @@
     </div>
   </footer>
 
+  <!-- кнопка вверх -->
+  <div class="button-up" >
+    <a id="buttonUp">
+
+    </a>
+  </div>
+
+  <!-- модальное окно -->
+ <div class="modal">
+    <ul class="modal__nav modal__list"  id="menuModal">
+  
+      <li class="modal__item">
+        <a class="modal__item-link" href="#blockHome">Home</a>
+      </li>
+      <li class="modal__item">
+        <a class="modal__item-link" href="#blockFeatures">Features</a>
+      </li>
+      <li class="modal__item">
+        <a class="modal__item-link" href="#blockRobot">Video</a>
+      </li>
+      <li class="modal__item">
+        <a class="modal__item-link" href="#blockScreen">Screens</a>
+      </li>
+      <li class="modal__item">
+        <a class="modal__item-link" href="#blockPricing">Pricing</a>
+      </li>
+      <li class="modal__item">
+        <a class="modal__item-link" href="#blockTeam">Team</a>
+      </li>
+      <li class="modal__item">
+        <a class="btn-free button" href="#">free trail</a>
+      </li>
+    </ul>
+    <button class="btn-close" type="button">
+      <span></span>
+    </button>
+ </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
   <script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/buttonUp.js"></script>
 
 </body>
 

@@ -7,7 +7,7 @@ body {
   // padding-left: 10px;
   // padding-right: 10px;
   // margin: 0 auto;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -151,6 +151,7 @@ img {
   position: relative;
   padding-top: 53px;
   padding-bottom: 328px;
+  @include padding;
   background-color: #cccccc;
   background-image: url("../img/header/header-bg.png");
   background-repeat: no-repeat;
@@ -188,6 +189,29 @@ img {
 .nav__item + .nav__item {
   margin-left: 38px;
   // letter-spacing: 2.1px;
+}
+
+.nav__item-link:hover {
+  text-shadow: 1px 1px 10px rgba($color: #ccc, $alpha: 1);
+}
+
+.button-menu {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-menu:focus {
+  outline: none;
+}
+
+.button-menu svg {
+  margin: 0;
+  padding: 0;
+  width: 35px;
+  height: 36px;
+  fill: #192b59;
 }
 
 .header__title {
@@ -1554,8 +1578,144 @@ img {
   margin-left: 5px;
 }
 
-// !Закончил здесь
+// кнопка вверх
+#buttonUp {
+  display: inline-block;
+  background-color: #1e8ce6;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s;
+  z-index: 1000;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+ box-shadow: 0 0 2px #fff;
+}
+
+#buttonUp:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#buttonUp:active {
+  background-color: #555;
+}
+
+#buttonUp::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#buttonUp.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+// модальное окно
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  max-width: 800px;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 20px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  z-index: 999;
+  text-align: center;
+  background-color: rgba($color: #fff, $alpha: 0.9);
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 5px 6px rgba($color: #000000, $alpha: 0.5);
+}
+
+.btn-close {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+.btn-close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn-close:after,
+.btn-close:before {
+  position: absolute;
+  top: 13px;
+  left: -8%;
+  content: "";
+  width: 32px;
+  height: 2px;
+  background-color: #333;
+}
+
+.btn-close:after {
+  transform: rotate(45deg);
+}
+
+.btn-close:before {
+  transform: rotate(-45deg);
+}
+
+.btn-close:focus {
+  outline: none;
+}
+
+.modal__list {
+  @include reset-list;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.modal__item {
+  margin-bottom: 12px;
+}
+
+.modal__item:hover {
+  text-shadow: 1px 1px 10px rgba($color: #ccc, $alpha: 1);
+}
+
+.modal__item:last-child {
+  margin-top: 35px;
+}
+
 /* MEDIA */
+
+@media (max-width: 1090px) {
+  .header__nav-list {
+    display: none;
+  }
+
+  .button-menu {
+    display: block;
+  }
+}
+
 @media (max-width: 1050px) {
   .sponsors {
     padding-top: 60px;
@@ -1570,11 +1730,11 @@ img {
     margin: 0 auto;
   }
 
-  .grid-title h2  {
+  .grid-title h2 {
     padding-right: 0;
     text-align: center;
   }
-  
+
   .grid {
     grid-template-areas:
       "a a "
@@ -1616,9 +1776,8 @@ img {
     max-width: 150px;
     margin: 0 auto;
   }
-  
+
   .form-input {
     padding-left: 15px;
   }
-  
 }
