@@ -11,4 +11,11 @@ $(document).ready(function () {
     $(".btn-thomas").hide();
     $(".social-thomas").fadeIn();
   });
+  $(".button-menu").click(function(){
+    $(".modal").show();
+  });
+  $(".btn-close").click(function(){
+    $(".modal").hide();
+  });
 });
+
