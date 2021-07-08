@@ -1626,7 +1626,7 @@ img {
 .modal {
   display: none;
   position: fixed;
-  width: 100%;
+  // width: 100%;
   max-width: 800px;
   top: 30px;
   left: 0;
@@ -1659,6 +1659,10 @@ img {
 .btn-close:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.btn-close:active {
+  filter: invert(100%);
 }
 
 .btn-close:after,
